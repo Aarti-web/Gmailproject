@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="68638" started-at="2020-03-10T13:29:52 EDT" finished-at="2020-03-10T13:31:01 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="68638" started-at="2020-03-10T13:29:52 EDT" finished-at="2020-03-10T13:31:01 EDT">
+      <class name="com.testing.AppTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.AppTest@7fad8c79]" name="beforeMethod" is-config="true" duration-ms="15596" started-at="2020-03-10T13:29:52 EDT" finished-at="2020-03-10T13:30:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MarkedReadEmailToUnreademail()[pri:10, instance:com.testing.AppTest@7fad8c79]" name="MarkedReadEmailToUnreademail" duration-ms="17717" started-at="2020-03-10T13:30:08 EDT" finished-at="2020-03-10T13:30:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MarkedReadEmailToUnreademail -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.AppTest@7fad8c79]" name="afterMethod" is-config="true" duration-ms="1874" started-at="2020-03-10T13:30:26 EDT" finished-at="2020-03-10T13:30:27 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MarkedReadEmailToUnreademail status=SUCCESS method=AppTest.MarkedReadEmailToUnreademail()[pri:10, instance:com.testing.AppTest@7fad8c79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.AppTest@7fad8c79]" name="beforeMethod" is-config="true" duration-ms="13923" started-at="2020-03-10T13:30:27 EDT" finished-at="2020-03-10T13:30:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MarkedUnreademailToReadEmail()[pri:11, instance:com.testing.AppTest@7fad8c79]" name="MarkedUnreademailToReadEmail" duration-ms="17763" started-at="2020-03-10T13:30:41 EDT" finished-at="2020-03-10T13:30:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MarkedUnreademailToReadEmail -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.AppTest@7fad8c79]" name="afterMethod" is-config="true" duration-ms="1721" started-at="2020-03-10T13:30:59 EDT" finished-at="2020-03-10T13:31:01 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MarkedUnreademailToReadEmail status=SUCCESS method=AppTest.MarkedUnreademailToReadEmail()[pri:11, instance:com.testing.AppTest@7fad8c79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testing.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
