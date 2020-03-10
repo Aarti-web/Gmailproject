@@ -49,7 +49,7 @@ public ErrorCollector errCol = new ErrorCollector();
 	
 	}
 	
-  public void NoEmail() throws InterruptedException {
+ public void NoEmail() throws InterruptedException {
 		
 	  		NextButton.click(); // click on Next Button
 	  		Thread.sleep(2000);
@@ -281,10 +281,7 @@ public void MoveEmailTrashToInbox() throws InterruptedException {
 	System.out.println("Email Moved From Bin to Inbox");
 	Thread.sleep(2000);    
 	
-	/*Lessbutton.click(); //Click on Less Button
-	Thread.sleep(2000);
-	
-	InboxPage.click(); // Click on Inbox Button
+/*	InboxPage.click(); // Click on Inbox Button
 	Thread.sleep(1000);
 	
 	WebElement mailsize= TotalInboxEmails;

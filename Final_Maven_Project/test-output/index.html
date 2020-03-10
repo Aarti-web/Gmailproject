@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\HP USER\AppData\Local\Temp\testng-eclipse-721027864\testng-customsuite.xml</span>
+                    <span>C:\Users\HP USER\AppData\Local\Temp\testng-eclipse--728701500\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="MarkedUnreademailToReadEmail">MarkedUnreademailToReadEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,52 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="InvalidEmail">InvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="InvalidPassword">InvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="MarkedReadEmailToUnreademail">MarkedReadEmailToUnreademail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="MarkedUnreademailToReadEmail">MarkedUnreademailToReadEmail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="MoveEmailInboxToTrash">MoveEmailInboxToTrash</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="MoveEmailTrashToInbox">MoveEmailTrashToInbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="NoEmail">NoEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="NoPassword">NoPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="TotalFirstPageEmail">TotalFirstPageEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="TotalInboxEmail">TotalInboxEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testing.AppTest" hash-for-method="ValidEmailPassword">ValidEmailPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,12 +176,96 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testing.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MarkedUnreademailToReadEmail">
+                  </a> <!-- MarkedUnreademailToReadEmail -->
+                  <span class="method-name">MarkedUnreademailToReadEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=80.0.3987.132)
+  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.02 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Niku&apos;, ip: &apos;192.168.2.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62322}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\HPUSER~1\AppData\Local\Temp\scoped_dir12776_1580740391}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.132, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddc3fb28900e0cbe4a0a667ab873af8c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.testing.PageFile.MarkedUnreademailToReadEmail(PageFile.java:352)
+	at com.testing.AppTest.MarkedUnreademailToReadEmail(AppTest.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.testing.AppTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidEmail">
+                  </a> <!-- InvalidEmail -->
+                  <span class="method-name">InvalidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidPassword">
+                  </a> <!-- InvalidPassword -->
+                  <span class="method-name">InvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="MarkedReadEmailToUnreademail">
@@ -137,9 +275,51 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="MarkedUnreademailToReadEmail">
-                  </a> <!-- MarkedUnreademailToReadEmail -->
-                  <span class="method-name">MarkedUnreademailToReadEmail</span>
+                  <a name="MoveEmailInboxToTrash">
+                  </a> <!-- MoveEmailInboxToTrash -->
+                  <span class="method-name">MoveEmailInboxToTrash</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MoveEmailTrashToInbox">
+                  </a> <!-- MoveEmailTrashToInbox -->
+                  <span class="method-name">MoveEmailTrashToInbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NoEmail">
+                  </a> <!-- NoEmail -->
+                  <span class="method-name">NoEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NoPassword">
+                  </a> <!-- NoPassword -->
+                  <span class="method-name">NoPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TotalFirstPageEmail">
+                  </a> <!-- TotalFirstPageEmail -->
+                  <span class="method-name">TotalFirstPageEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TotalInboxEmail">
+                  </a> <!-- TotalInboxEmail -->
+                  <span class="method-name">TotalInboxEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidEmailPassword">
+                  </a> <!-- ValidEmailPassword -->
+                  <span class="method-name">ValidEmailPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +327,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP USER\AppData\Local\Temp\testng-eclipse-721027864\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP USER\AppData\Local\Temp\testng-eclipse--728701500\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,20 +376,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'MarkedUnreademailToReadEmail')
 data.setCell(0, 2, 'com.testing.AppTest')
-data.setCell(0, 3, 17763);
+data.setCell(0, 3, 45208);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MarkedReadEmailToUnreademail')
+data.setCell(1, 1, 'MoveEmailInboxToTrash')
 data.setCell(1, 2, 'com.testing.AppTest')
-data.setCell(1, 3, 17717);
+data.setCell(1, 3, 24893);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'MoveEmailTrashToInbox')
+data.setCell(2, 2, 'com.testing.AppTest')
+data.setCell(2, 3, 21675);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TotalFirstPageEmail')
+data.setCell(3, 2, 'com.testing.AppTest')
+data.setCell(3, 3, 17243);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'MarkedReadEmailToUnreademail')
+data.setCell(4, 2, 'com.testing.AppTest')
+data.setCell(4, 3, 16632);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TotalInboxEmail')
+data.setCell(5, 2, 'com.testing.AppTest')
+data.setCell(5, 3, 16349);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'InvalidPassword')
+data.setCell(6, 2, 'com.testing.AppTest')
+data.setCell(6, 3, 7778);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidEmailPassword')
+data.setCell(7, 2, 'com.testing.AppTest')
+data.setCell(7, 3, 7706);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NoPassword')
+data.setCell(8, 2, 'com.testing.AppTest')
+data.setCell(8, 3, 5655);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'InvalidEmail')
+data.setCell(9, 2, 'com.testing.AppTest')
+data.setCell(9, 3, 4459);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'NoEmail')
+data.setCell(10, 2, 'com.testing.AppTest')
+data.setCell(10, 3, 2174);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,24 +457,134 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">MarkedReadEmailToUnreademail</span>
-                <span class="method-start">15599 ms</span>
+                <span class="method-name">NoEmail</span>
+                <span class="method-start">14591 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=MarkedReadEmailToUnreademail status=SUCCESS method=AppTest.MarkedReadEmailToUnreade...)</span>
-                <span class="method-start">33318 ms</span>
+                <span class="method-name">afterMethod([TestResult name=NoEmail status=SUCCESS method=AppTest.NoEmail()[pri:1, instance:com.testing.AppTest...)</span>
+                <span class="method-start">16767 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">35194 ms</span>
+                <span class="method-start">18437 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">MarkedUnreademailToReadEmail</span>
-                <span class="method-start">49117 ms</span>
+                <span class="method-name">NoPassword</span>
+                <span class="method-start">32381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=MarkedUnreademailToReadEmail status=SUCCESS method=AppTest.MarkedUnreademailToReadE...)</span>
-                <span class="method-start">66882 ms</span>
+                <span class="method-name">afterMethod([TestResult name=NoPassword status=SUCCESS method=AppTest.NoPassword()[pri:2, instance:com.testing.A...)</span>
+                <span class="method-start">38038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">38957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidEmail</span>
+                <span class="method-start">51883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=InvalidEmail status=SUCCESS method=AppTest.InvalidEmail()[pri:3, instance:com.testi...)</span>
+                <span class="method-start">56343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">57238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidPassword</span>
+                <span class="method-start">71172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=InvalidPassword status=SUCCESS method=AppTest.InvalidPassword()[pri:4, instance:com...)</span>
+                <span class="method-start">78951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidEmailPassword</span>
+                <span class="method-start">92810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ValidEmailPassword status=SUCCESS method=AppTest.ValidEmailPassword()[pri:5, instan...)</span>
+                <span class="method-start">100518 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">101421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TotalFirstPageEmail</span>
+                <span class="method-start">114612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TotalFirstPageEmail status=SUCCESS method=AppTest.TotalFirstPageEmail()[pri:6, inst...)</span>
+                <span class="method-start">131856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">132934 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TotalInboxEmail</span>
+                <span class="method-start">146705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TotalInboxEmail status=SUCCESS method=AppTest.TotalInboxEmail()[pri:7, instance:com...)</span>
+                <span class="method-start">163056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">164182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MoveEmailInboxToTrash</span>
+                <span class="method-start">177373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MoveEmailInboxToTrash status=SUCCESS method=AppTest.MoveEmailInboxToTrash()[pri:8, ...)</span>
+                <span class="method-start">202267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">203275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MoveEmailTrashToInbox</span>
+                <span class="method-start">216504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MoveEmailTrashToInbox status=SUCCESS method=AppTest.MoveEmailTrashToInbox()[pri:9, ...)</span>
+                <span class="method-start">238180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">239147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MarkedReadEmailToUnreademail</span>
+                <span class="method-start">252298 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MarkedReadEmailToUnreademail status=SUCCESS method=AppTest.MarkedReadEmailToUnreade...)</span>
+                <span class="method-start">268931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">269922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MarkedUnreademailToReadEmail</span>
+                <span class="method-start">282925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MarkedUnreademailToReadEmail status=FAILURE method=AppTest.MarkedUnreademailToReadE...)</span>
+                <span class="method-start">328140 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

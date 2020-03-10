@@ -12,17 +12,18 @@ public class AppTest
 {
 
 	
-PageFile pf = new PageFile();
+	PageFile pf = new PageFile();
 	
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 		pf.openBrowser();
 		pf.openURL();
+	
 	}
 	
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-		pf.closeBrowser();
+	pf.closeBrowser();
 	}
    
    @Test(priority = 1)  
@@ -60,27 +61,27 @@ PageFile pf = new PageFile();
     public void TotalInboxEmail () throws InterruptedException
     {
     	pf.TotalInboxEmail(); 
-} 
-@Test(priority = 8) 
+    } 
+    @Test(priority = 8) 
     public void MoveEmailInboxToTrash() throws InterruptedException
     {
     	pf.MoveEmailInboxToTrash();
     } 
     
-  @Test(priority = 9) 
+    @Test(priority = 9) 
     public void MoveEmailTrashToInbox () throws InterruptedException
     {
     	pf.MoveEmailTrashToInbox();
     }
- @Test(priority = 10) 
+    @Test(priority = 10) 
         public void MarkedReadEmailToUnreademail () throws InterruptedException
 
     {
     	pf.MarkedReadEmailToUnreademail();
     } 
     
-  @Test(priority = 11) 
-    public void MarkedUnreademailToReadEmail () throws InterruptedException
+    @Test(priority = 11) 
+    	public void MarkedUnreademailToReadEmail () throws InterruptedException
     {
     	pf.MarkedUnreademailToReadEmail();
     } 

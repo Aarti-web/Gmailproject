@@ -21,11 +21,10 @@ public class LocatorsFile {
 	@FindBy(xpath = "//*[@role=\"menuitem\" and @act=\"10\"]") public WebElement Bin;
 	@FindBy(xpath = "//*[@class='ait']") public WebElement More;
 	@FindBy(xpath = "//*[@class=\"HwgYue\"]/div/div[1]/div/div[6]/div") public WebElement Bin1;
-	@FindBy(xpath = "//*[@id=\":ew\" and @role=\"checkbox\"]") public WebElement SelectEmailOfBin;
+	@FindBy(xpath = "//div[@class=\"aeF\"]/div/div[2]/div[3]/div[2]/div/table/tbody/tr/td[2]/div") public WebElement SelectEmailOfBin;
 	@FindBy(xpath = "//*[@id=\":ep\"]/div[1]") public WebElement Move;
 	@FindBy(xpath = "//*[@act=\"304\" ]") public WebElement Inbox;
-	@FindBy(xpath = "//*[@class='ait']") public WebElement Lessbutton;
-	@FindBy(linkText = "Inbox") public WebElement InboxPage;  
+	@FindBy(xpath = "/div[@class=\"nM\"]/div[2]/div/div/div/div/div/div/div/div/div[2]/span/a") public WebElement InboxPage; 
 	@FindBy(xpath = "//*[@class=\"bzn\"]/div/div[7]") public WebElement More1;
 	@FindBy(xpath = "//*[@class=\"J-M aX0 aYO jQjAxd\"]/div/div[3]/div") public WebElement MarkAsUnread;
 	@FindBy(xpath = "html/body/div[7]/div[3]/div/div[1]/div[4]/div[1]/div/div[3]/div/div/div[2]/span/span[1]") public WebElement MarkAsUnreadMessage;
